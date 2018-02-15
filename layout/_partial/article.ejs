@@ -106,7 +106,7 @@
 
   <% if (theme.disqus || config.disqus_shortname){ %>
   <%- partial('post/disqus', {
-      key: post.slug,
+      key: post.abbrlink,
       title: post.title,
       url: post.permalink
     }) %>
