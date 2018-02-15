@@ -2,26 +2,27 @@
 
 menu:
   主页: /
-  随笔: /tags/随笔/
+  留言板: /guestbook/
+  存档: /archives/
 
 # SubNav
 subnav:
-  github: "#"
-  weibo: "#"
-  rss: "#"
-  zhihu: "#"
+  github: "https://github.com/inkedawn"
+  weibo: "http://weibo.com/5736557019/"
+  zhihu: "https://www.zhihu.com/people/inkedawn/"
   #qq: "#"
   #weixin: "#"
   #jianshu: "#"
   #douban: "#"
-  #segmentfault: "#"
+  segmentfault: "https://segmentfault.com/u/inkedawn"
   #bilibili: "#"
   #acfun: "#"
-  #mail: "mailto:litten225@qq.com"
+  # mail: "inkedawn@gmail.com"
   #facebook: "#"
   #google: "#"
   #twitter: "#"
   #linkedin: "#"
+  rss: "/atom.xml"
 
 rss: /atom.xml
 
@@ -39,7 +40,7 @@ show_all_link: '展开全文'
 # 数学公式
 mathjax: false
 # 是否在新窗口打开链接
-open_in_new: false
+open_in_new: true
 
 # 打赏
 # 打赏type设定：0-关闭打赏； 1-文章对应的md文件里有reward:true属性，才有打赏； 2-所有文章均有打赏
@@ -47,13 +48,13 @@ reward_type: 2
 # 打赏wording
 reward_wording: '谢谢你请我吃糖果'
 # 支付宝二维码图片地址，跟你设置头像的方式一样。比如：/assets/img/alipay.jpg
-alipay: 
+alipay: /assets/img/alipay.jpg
 # 微信二维码图片地址
 weixin: 
 
 # 目录
 # 目录设定：0-不显示目录； 1-文章对应的md文件里有toc:true属性，才有目录； 2-所有文章均显示目录
-toc: 1
+toc: 2
 # 根据自己的习惯来设置，如果你的目录标题习惯有标号，置为true即可隐藏hexo重复的序号；否则置为false
 toc_hide_index: true
 # 目录为空时的提示
@@ -64,11 +65,11 @@ top: true
 
 # Miscellaneous
 baidu_analytics: ''
-google_analytics: ''
-favicon: /favicon.png
+google_analytics: 'UA-112384026-1'
+favicon: /assets/img/favicon.ico
 
 #你的头像url
-avatar:
+avatar: /assets/img/avatar.png
 
 #是否开启分享
 share_jia: true
@@ -120,11 +121,28 @@ smart_menu:
   aboutme: '关于我'
 
 friends:
-  友情链接1: http://localhost:4000/
-  友情链接2: http://localhost:4000/
-  友情链接3: http://localhost:4000/
-  友情链接4: http://localhost:4000/
-  友情链接5: http://localhost:4000/
-  友情链接6: http://localhost:4000/
+  言肆: https://sendya.me/
+  月宅酱: https://ikmoe.com/
+  DIYgod: https://diygod.me/
+  Shy泠的博客: https://shyling.com/
+  Guoguo's blog: http://imguoguo.com
+  freejishu的美丽世界: http://www.freejishu.com/
+  毓彦: https://www.yuyanlab.com/
+  Jackeriss: https://www.jackeriss.com/
+  ⑨BIE: http://blog.9bie.org:8081/
+  猎风'S BLOG: https://liefeng.github.io/
+  FGHRSH 的博客: https://www.fghrsh.net/
 
-aboutme: 很惭愧<br><br>只做了一点微小的工作<br>谢谢大家
+#   Jerry Locke's Blog: https://jerry.hk/
+# Cyyzaid: https://www.cyyzaid.cn/
+# 懒: https://blog.lcrun.com/
+# metheno: http://www.metheno.net/blog/
+# HXC博客: http://huxinchun.com/
+# Troy's Blog: https://itroy.cc/
+# Netrvin: https://131.re/
+# 宇辰 Yuchen's Blog: https://hywlovexyc.info/blog/
+# Hostker: https://i.hostker.com/flag/1549
+# UPYUN: https://www.upyun.com/
+# 网易云音乐: http://music.163.com/store/gain/invited?id=65656374
+
+aboutme: 很惭愧<br><br>只做了一点微小的工作<br>谢谢大家 <a href="/about/">More</a>
